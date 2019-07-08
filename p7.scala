@@ -14,10 +14,9 @@ def checkPrime(num:Long):Boolean = {
 
 var primes = List[Int]()
 var i = 2;
-while (primes.length < 10009) {
-    println(i)
+while (primes.length < 10003) {
     if (checkPrime(i)) primes ::= i
     i += 1
 }
 
-println(primes(10002))
+println(primes.reverse(10000))
